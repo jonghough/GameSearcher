@@ -7,5 +7,6 @@ Lazy loads images (fan art or box art) for the results of each search and allows
 ## Dependencies
 * AndroidRx (Reactive Java)
 * SimpleXML (thegamesdb.net's API is all XML)
+* okHttp (for http requests )
 
 
