@@ -241,6 +241,7 @@ public class ResultsActivity extends Activity {
 
                 @Override
                 public void onCompleted() {
+                    mGamesAdapter.clearCache();
                     mGamesAdapter.setList(filteredList);
                     mGamesAdapter.notifyDataSetChanged();
                 }
@@ -283,6 +284,7 @@ public class ResultsActivity extends Activity {
 
             @Override
             public void onCompleted() {
+                mGamesAdapter.clearCache();
                 mGamesAdapter.setList(filteredList);
                 mGamesAdapter.notifyDataSetChanged();
             }

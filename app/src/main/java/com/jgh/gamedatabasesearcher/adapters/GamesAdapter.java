@@ -77,6 +77,14 @@ public class GamesAdapter extends BaseAdapter {
         mGameList = gamesList;
     }
 
+    /**
+     *  Clears the LruCache of all image data.
+     */
+    public void clearCache(){
+        if(mDataMap != null)
+            mDataMap.evictAll();
+    }
+
 
     @Override
     public int getCount() {
